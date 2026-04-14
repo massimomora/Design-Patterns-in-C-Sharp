@@ -6,7 +6,7 @@ using ConsoleApp1.SOLID.S.BadExample;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.State.GoodExample
 {
-    public class ModerationState : State
+    public class ModerationState : IState
     {
         private Document _document;
 

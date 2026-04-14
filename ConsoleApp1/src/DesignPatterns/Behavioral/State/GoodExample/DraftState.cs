@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.State.GoodExample
 {
-    public class DraftState : State
+    public class DraftState : IState
     {
         private Document _document;
 

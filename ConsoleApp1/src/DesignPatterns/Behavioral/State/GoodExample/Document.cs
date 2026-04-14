@@ -8,7 +8,7 @@ namespace ConsoleApp1.src.DesignPatterns.Behavioral.State.GoodExample
 {
     public class Document
     {
-        public State State { get; set; }
+        public IState State { get; set; }
         public UserRoles CurrentUserRole { get; set; }
 
         public Document(UserRoles currentUserRole)

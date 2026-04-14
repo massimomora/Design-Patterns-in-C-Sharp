@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.State.GoodExample
 {
-    public interface State
+    public interface IState
     {
         void Publish();
 

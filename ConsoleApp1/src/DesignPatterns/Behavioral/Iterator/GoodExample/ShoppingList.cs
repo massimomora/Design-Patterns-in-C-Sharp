@@ -5,38 +5,38 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.Iterator.GoodExample
 {
-    public class ShoppingList
+    public class ShoppingList<T>
     {
-        private List<string> _list = new List<string>();
-
-        public void Push(string itemName)
+        private List<T> _list = new List<T>();
+        
+        public void Push(T itemName)
         {
             _list.Add(itemName);
         }
 
-        public string Pop()
+        public T Pop()
         {
             var last = _list.Last();
             _list.Remove(last);
             return last;
         }
 
-        public IIterator<String> CreateIterator()
+        public IIterator<T> CreateIterator()
         {
             return new ListIterator(this);
         }
 
-        private class ListIterator : IIterator<String>
+        private class ListIterator : IIterator<T>
         {
-            private ShoppingList _shoppingList;
+            private ShoppingList<T> _shoppingList;
             private int _index;
 
-            public ListIterator(ShoppingList shoppingList)
+            public ListIterator(ShoppingList<T> shoppingList)
             {
                 _shoppingList = shoppingList;
             }
 
-            public string Current()
+            public T Current()
             {
                 return _shoppingList._list[_index];
             }
@@ -52,5 +52,6 @@ namespace ConsoleApp1.src.DesignPatterns.Behavioral.Iterator.GoodExample
             }
 
         }
+       
     }
 }
