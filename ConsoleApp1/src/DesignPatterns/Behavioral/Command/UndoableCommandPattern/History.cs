@@ -8,14 +8,14 @@ namespace ConsoleApp1.src.DesignPatterns.Behavioral.Command.UndoableCommandPatte
     // Class to keep track of the commands that we've applied.
     public class History
     {
-        private List<UndoableCommand> commands = new List<UndoableCommand>();
+        private List<IUndoableCommand> commands = new List<IUndoableCommand>();
 
-        public void Push(UndoableCommand command)
+        public void Push(IUndoableCommand command)
         {
             commands.Add(command);
         }
 
-        public UndoableCommand Pop()
+        public IUndoableCommand Pop()
         {
             var last = commands.Last();
             commands.Remove(last);

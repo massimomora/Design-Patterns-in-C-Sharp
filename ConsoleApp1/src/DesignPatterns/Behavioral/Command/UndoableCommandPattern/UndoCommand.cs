@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.Command.UndoableCommandPattern
 {
-    public class UndoCommand : Command
+    public class UndoCommand : ICommand
     {
         private History _history;
 

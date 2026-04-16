@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.Command.UndoableCommandPattern
 {
-    public interface Command
+    public interface ICommand
     {
         void Execute();
     }

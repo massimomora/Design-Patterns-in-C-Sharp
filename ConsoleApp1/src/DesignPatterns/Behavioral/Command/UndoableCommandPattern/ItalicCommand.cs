@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.src.DesignPatterns.Behavioral.Command.UndoableCommandPattern
 {
-    public class ItalicCommand : UndoableCommand
+    public class ItalicCommand : IUndoableCommand
     {
         private HtmlDocument _doc;
         private string _prevContent = "";

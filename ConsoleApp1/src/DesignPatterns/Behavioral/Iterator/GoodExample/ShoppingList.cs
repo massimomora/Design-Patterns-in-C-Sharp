@@ -8,7 +8,7 @@ namespace ConsoleApp1.src.DesignPatterns.Behavioral.Iterator.GoodExample
     public class ShoppingList<T>
     {
         private List<T> _list = new List<T>();
-        
+
         public void Push(T itemName)
         {
             _list.Add(itemName);
@@ -52,6 +52,6 @@ namespace ConsoleApp1.src.DesignPatterns.Behavioral.Iterator.GoodExample
             }
 
         }
-       
+
     }
 }

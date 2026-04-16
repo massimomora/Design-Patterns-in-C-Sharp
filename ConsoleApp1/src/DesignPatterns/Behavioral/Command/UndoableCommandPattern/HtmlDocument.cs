@@ -10,7 +10,7 @@ namespace ConsoleApp1.src.DesignPatterns.Behavioral.Command.UndoableCommandPatte
     // Commands are the link between user interface object, and business objects.
     public class HtmlDocument
     {
-        public string Content { get; set; }
+        public required string Content { get; set; }
 
         public void MakeItalic()
         {
